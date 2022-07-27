@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  
+
+}
+
+.header {
+    display: flex;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 200px;
+    margin: 0;
+    
+
+}
+
+.left-header a{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.right-header a{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 8px 24px;
+  }
+  
+  a {
+    font-size: ;
+    padding: 8px;
+    text-decoration: none;
+  }
