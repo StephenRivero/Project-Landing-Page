@@ -126,13 +126,17 @@ ul {
 }
 
 .Header {
-    font-size: 36px;
-    font-weight: bolder;
     color: #1F2937;
     padding: 50px 50px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
+
+.Header h1 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+
 
 .Contents img {
     
@@ -154,4 +158,34 @@ ul {
     justify-content: center;
     text-align: center;
     padding-bottom: 100px;
+}
+
+/* Quote Section */
+
+.Quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 350px;
+    
+}
+
+.Verse {
+    font-size: 36px;
+    font-style:italic;
+    color:#1F2937;
+    text-align: left;
+    margin-bottom: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 24px;
+    
+}
+
+.Book {
+    font-size: 24px;
+    font-weight: bold;
+    color:#1F2937;
+    align-self: flex-end;
+    margin-right: 40px;
 }
