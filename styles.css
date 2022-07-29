@@ -49,7 +49,6 @@ ul {
   }
   
   a {
-    font-size: ;
     padding: 8px;
     text-decoration: none;
   }
@@ -86,18 +85,19 @@ ul {
    
 }
 
-.hero-text button {
+.hero-text button, .Ctc-button button {
     display: block;
     background-color: #3882F6;
     color: #F9FAF8;
     text-align: center;
-    width: 110px;
+    
     border: none;
-    padding: 10px;
+    padding: 10px 35px;
     border-radius: 8px;
     font-family: 'Roboto', arial;
     text-decoration: none;
     font-weight: bolder;
+    font-size: 20px;
 }
 
 .hero-image img {
@@ -136,15 +136,11 @@ ul {
     font-weight: bolder;
 }
 
-
-
 .Contents img {
-    
     font-family: 'Roboto', Helvetica, sans-serif;
     width: 200px;
     height: 200px;
     flex-wrap: nowrap;
-
     border: 4px solid #3882F6;
     border-radius: 15px;
     margin: 5px 15px 0px 15px;
@@ -188,4 +184,46 @@ ul {
     color:#1F2937;
     align-self: flex-end;
     margin-right: 40px;
+}
+
+/* Call to Action Section */
+
+.Call-to-action {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+}
+
+.Ctc-container {
+    background-color: #3882F6;
+    padding: 50px 100px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Ctc-text h1 {
+    color: #F9FAF8;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.Ctc-text p {
+    color: #E5E7EB;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Ctc-button {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.Ctc-button button {
+    border: 3px solid white;
 }
