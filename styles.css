@@ -8,8 +8,6 @@
 body {
     display: flex;
     flex-direction: column;
-  
-
 }
 
 /* Header Section */
@@ -48,9 +46,10 @@ ul {
     gap: 8px 24px;
   }
   
-  a {
+a {
     padding: 8px;
     text-decoration: none;
+    color: inherit;
   }
 
 /* Hero Section */
@@ -75,7 +74,7 @@ ul {
     font-weight: bolder;
     color:#F9FAF8;
     margin-bottom: 8px;
-    margin-top: -32px;
+    margin-top: -40px;
 }
 
 .hero-text p {
@@ -101,8 +100,9 @@ ul {
 }
 
 .hero-image img {
-    width: 600px; 
-    height: 300px;
+    width: 500px; 
+    height: 250px;
+    object-fit: cover;
     
 }
 
@@ -123,6 +123,7 @@ ul {
     display: flex;
     flex-direction:column;
     align-items: center;
+    
 }
 
 .Header {
@@ -143,7 +144,7 @@ ul {
     flex-wrap: nowrap;
     border: 4px solid #3882F6;
     border-radius: 15px;
-    margin: 5px 15px 0px 15px;
+    margin: 5px 44px 0px 44px;
     object-fit: cover;
 }
 
@@ -227,3 +228,18 @@ ul {
 .Ctc-button button {
     border: 3px solid white;
 }
+
+/* Footer section */
+
+footer {
+    display:flex;
+    justify-content: center;
+    background-color: #1F2937;
+    padding: 25px;
+    color: #F9FAF8;
+}
+
+footer a { 
+    color: inherit; 
+    text-decoration: underline;
+} 
