@@ -29,23 +29,28 @@ body {
     
 }
 
-.right-header a{
+.right-header {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: nowrap;
     margin: 0;
     padding: 0;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 8px 24px;
-  }
-  
+.About:hover {
+    text-decoration: underline;
+}
+
+.Store:hover {
+    text-decoration: underline;
+}
+
+.Contact:hover {
+    text-decoration: underline;
+}
+
 a {
     padding: 8px;
     text-decoration: none;
@@ -84,12 +89,11 @@ a {
    
 }
 
-.hero-text button, .Ctc-button button {
+button {
     display: block;
     background-color: #3882F6;
     color: #F9FAF8;
     text-align: center;
-    
     border: none;
     padding: 10px 35px;
     border-radius: 8px;
@@ -97,6 +101,21 @@ a {
     text-decoration: none;
     font-weight: bolder;
     font-size: 20px;
+}
+
+button:hover {
+    display: block;
+    background-color: #F9FAF8;
+    color: #3882F6;
+    text-align: center;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 8px;
+    font-family: 'Roboto', arial;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .hero-image img {
@@ -110,11 +129,15 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-
 }
 
 .hero-image a {
     text-decoration: none;
+    color: #E5E7EB;
+}
+
+.hero-image a:hover {
+    text-decoration: underline;
 }
 
 /* Information Section */
