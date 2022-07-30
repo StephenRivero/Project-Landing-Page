@@ -5,9 +5,15 @@
   margin: 0;
 }
 
-body {
+.wrapper {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper > * {
+    flex: 1 100%;
 }
 
 /* Header Section */
@@ -17,37 +23,37 @@ body {
     background-color: #1F2937;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 200px 0px 190px;
+    padding: 10px 0px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1920px;
 }
 
 .left-header a{
     font-size: 24px;
     color: #F9FAF8;
     font-weight: bolder;
+    margin-right: 15px;
     
 }
+
+/*.left-header a:hover{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bolder;
+}*/
 
 .right-header {
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
-    margin: 0;
+    margin-right: 2px;
     padding: 0;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.About:hover {
-    text-decoration: underline;
-}
-
-.Store:hover {
-    text-decoration: underline;
-}
-
-.Contact:hover {
+.About:hover, .Store:hover, .Contact:hover {
     text-decoration: underline;
 }
 
@@ -65,13 +71,15 @@ a {
     justify-content: space-between;
     background-color: #1F2937;
     margin: 0;
-    padding: 100px 200px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px;
+    flex-wrap: wrap;
 
 }
 
 .hero-text {
-    width: 600px;
+    max-width: 100%;
+    
+    
 }
 
 .hero-text h1 {
@@ -79,7 +87,8 @@ a {
     font-weight: bolder;
     color:#F9FAF8;
     margin-bottom: 8px;
-    margin-top: -40px;
+    margin-top: 0px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .hero-text p {
@@ -90,7 +99,7 @@ a {
 }
 
 button {
-    display: block;
+    display: flex;
     background-color: #3882F6;
     color: #F9FAF8;
     text-align: center;
@@ -119,16 +128,16 @@ button:hover {
 }
 
 .hero-image img {
-    width: 500px; 
-    height: 250px;
-    object-fit: cover;
-    
+    max-width: 500px;
+    max-height: 250px;
+    /*object-fit: cover;*/
 }
 
 .hero-image {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    max-width: 100%;
 }
 
 .hero-image a {
@@ -146,38 +155,43 @@ button:hover {
     display: flex;
     flex-direction:column;
     align-items: center;
-    
+    padding: 0px 0px;
+    flex-wrap: wrap;
 }
 
 .Header {
-    color: #1F2937;
-    padding: 50px 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    
+    
 }
 
 .Header h1 {
     font-size: 36px;
     font-weight: bolder;
+    color: #1F2937;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 .Contents img {
     font-family: 'Roboto', Helvetica, sans-serif;
     width: 200px;
     height: 200px;
-    flex-wrap: nowrap;
     border: 4px solid #3882F6;
     border-radius: 15px;
-    margin: 5px 44px 0px 44px;
     object-fit: cover;
 }
 
 .Contents {
     display:flex;
     flex-direction: row;
-    width: 200px;
     justify-content: center;
     text-align: center;
-    padding-bottom: 100px;
+    flex-wrap: wrap;
+    
+}
+
+.Contents a:hover {
+    text-decoration: underline;
 }
 
 /* Quote Section */
@@ -187,8 +201,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 350px;
-    
 }
 
 .Verse {
@@ -196,10 +208,7 @@ button:hover {
     font-style:italic;
     color:#1F2937;
     text-align: left;
-    margin-bottom: 24px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 24px;
-    
 }
 
 .Book {
@@ -207,49 +216,48 @@ button:hover {
     font-weight: bold;
     color:#1F2937;
     align-self: flex-end;
-    margin-right: 40px;
+    margin-right: 15px;
 }
 
-/* Call to Action Section */
+/* CTA Section */
 
-.Call-to-action {
+.CTA {
+    padding: 10px 10px;
+}
+
+.CTA-container {
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 200px;
-}
-
-.Ctc-container {
     background-color: #3882F6;
-    padding: 50px 100px;
-    width: 100%;
     border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
+    gap:10px;
 
 }
 
-.Ctc-text h1 {
+.CTA-container h1 {
     color: #F9FAF8;
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    
 }
 
-.Ctc-text p {
+.CTA-container p {
     color: #E5E7EB;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.Ctc-button {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
-
-.Ctc-button button {
+.CTA-container button {
     border: 3px solid white;
+    display: inline-block;
+    margin-bottom: 25px;
 }
 
 /* Footer section */
@@ -266,3 +274,68 @@ footer a {
     color: inherit; 
     text-decoration: underline;
 } 
+
+/* Screen size responsive settings */
+
+@media all and (max-width: 320px) {
+    .hero-section, .hero-text,  .hero-image, .Information, .Quote, .Call-to-action, footer     {
+        display: flex;
+        flex: 3;
+        padding: 0px 4px;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header {
+        padding: 15px 0px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        padding-top: 10px;
+
+    }
+
+    .hero-text p {
+        padding: 10px;
+    }
+
+    .hero-image img {
+        padding-top: 20px;
+        max-width: 100%;
+    }
+
+    .hero-image a {
+        padding: 12px;
+    }
+
+    .Header h1 {
+        display: flex;
+        text-align: center;
+        padding: 7px;
+        font-size: 32px;
+    }
+
+    .Contents p {
+        padding-bottom: 10px;
+    }
+
+    .Verse p {
+        font-size: 28px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .Book p {
+        padding-bottom: 20px;
+    }
+
+}
+
+/*@media all and (min-width:600px) {
+    .wrapper    {   /*.header, .hero-section, .hero-image,.Information, .Quote, .Call-to-action, footer */
+        /*flex: 1;
+        
+    }
+}
