@@ -34,14 +34,7 @@
     color: #F9FAF8;
     font-weight: bolder;
     margin-right: 15px;
-    
 }
-
-/*.left-header a:hover{
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: bolder;
-}*/
 
 .right-header {
     display: flex;
@@ -68,38 +61,31 @@ a {
 .hero-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #1F2937;
     margin: 0;
-    padding: 0px 0px;
+    padding: 0px 4px;
     flex-wrap: wrap;
-
-}
-
-.hero-text {
-    max-width: 100%;
-    
-    
+    text-align: center;
 }
 
 .hero-text h1 {
     font-size: 48px;
     font-weight: bolder;
     color:#F9FAF8;
-    margin-bottom: 8px;
-    margin-top: 0px;
+    margin: 0;
     font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
 .hero-text p {
     font-size: 18px;
     color: #E5E7EB;
-    margin-bottom: 8px;
+    padding: 10px 4px;
    
 }
 
 button {
-    display: flex;
+    display: inline-block;
     background-color: #3882F6;
     color: #F9FAF8;
     text-align: center;
@@ -110,10 +96,12 @@ button {
     text-decoration: none;
     font-weight: bolder;
     font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 button:hover {
-    display: block;
+    display: inline-block;
     background-color: #F9FAF8;
     color: #3882F6;
     text-align: center;
@@ -127,22 +115,24 @@ button:hover {
     cursor: pointer;
 }
 
-.hero-image img {
-    max-width: 500px;
-    max-height: 250px;
-    /*object-fit: cover;*/
-}
-
 .hero-image {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    padding: 0 2px;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 500px;
+    max-height: 250px;
     max-width: 100%;
 }
 
 .hero-image a {
     text-decoration: none;
     color: #E5E7EB;
+    justify-content: center;
+    padding: 10px;
 }
 
 .hero-image a:hover {
@@ -155,7 +145,7 @@ button:hover {
     display: flex;
     flex-direction:column;
     align-items: center;
-    padding: 0px 0px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
 }
 
@@ -169,7 +159,16 @@ button:hover {
     font-weight: bolder;
     color: #1F2937;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.Contents {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .Contents img {
@@ -179,15 +178,12 @@ button:hover {
     border: 4px solid #3882F6;
     border-radius: 15px;
     object-fit: cover;
+    gap: 0 10px;
+    
 }
 
-.Contents {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    
+.Contents p {
+    margin-bottom: 20px;
 }
 
 .Contents a:hover {
@@ -201,18 +197,24 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .Verse {
-    font-size: 36px;
+    /* font-size: 36px; */
     font-style:italic;
     color:#1F2937;
     text-align: left;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-size: clamp(1.3rem, 1rem + 1.5vw, 5rem);
+    text-align: center;
+    padding: 15px;
+
 }
 
 .Book {
-    font-size: 24px;
+    font-size: clamp(1.3rem, 1rem + 1.5vw, 3rem);
     font-weight: bold;
     color:#1F2937;
     align-self: flex-end;
@@ -251,7 +253,7 @@ button:hover {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .CTA-container button {
@@ -266,8 +268,9 @@ footer {
     display:flex;
     justify-content: center;
     background-color: #1F2937;
-    padding: 25px;
+    padding: 15px;
     color: #F9FAF8;
+    text-align: center;
 }
 
 footer a { 
@@ -277,10 +280,9 @@ footer a {
 
 /* Screen size responsive settings */
 
-@media all and (max-width: 320px) {
+/* @media all and (max-width: 320px) {
     .hero-section, .hero-text,  .hero-image, .Information, .Quote, .Call-to-action, footer     {
-        display: flex;
-        flex: 3;
+        
         padding: 0px 4px;
         text-align: center;
         justify-content: center;
@@ -331,7 +333,7 @@ footer a {
         padding-bottom: 20px;
     }
 
-}
+} */
 
 /*@media all and (min-width:600px) {
     .wrapper    {   /*.header, .hero-section, .hero-image,.Information, .Quote, .Call-to-action, footer */
