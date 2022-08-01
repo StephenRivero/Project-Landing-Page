@@ -310,13 +310,35 @@ footer a {
 
 @media all and (min-width: 768px) {
     .header {
-        padding: 20px 50px;
+        padding: 20px 30px;
+    }
+
+    .hero-section {
+        max-width: 100%;
+    }
+
+    .hero-text {
+        max-width: 45%;
+    }
+
+    .hero-text h1 {
+        margin: -60px 0 0 10px;
+    }
+
+    .hero-text p {
+        padding: 5px 10px 10px 30px;
+    }
+
+    .hero-text button {
+        margin-right: -20px;
     }
 
     .hero-image {
         display: inline-flex;
         flex-wrap: wrap;
-        gap: 0 500px;
+        gap: 0 10px;
+        max-width: 50%;
+        justify-content: flex-end;
     }
 
     .Contents img {
