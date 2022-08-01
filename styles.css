@@ -176,6 +176,7 @@ button:hover {
     margin: 0 10px;
     display: inline-block;
     
+    
 }
 
 .Contents p {
@@ -276,6 +277,12 @@ footer a {
 
 /* Screen size responsive settings */
 
+@media all and (min-width: 375px) {
+    .CTA-container h1 {
+        padding: 20px 45px 10px 45px;
+    }
+}
+
 @media all and (min-width: 425px) {
     .header {
         padding-left: 10px;
@@ -298,5 +305,30 @@ footer a {
     footer {
         padding-left: 60px;
         padding-right: 60px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .hero-image {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 0 500px;
+    }
+
+    .Contents img {
+        margin: 0 30px;
+    }
+    
+    .Verse {
+        padding: 0 70px;
+    }
+
+    .Book {
+        margin-right: 70px;
+        margin-top: 10px;
     }
 }
