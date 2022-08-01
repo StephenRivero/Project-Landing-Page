@@ -149,11 +149,6 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.Header {
-    
-    
-}
-
 .Header h1 {
     font-size: 36px;
     font-weight: bolder;
@@ -178,7 +173,8 @@ button:hover {
     border: 4px solid #3882F6;
     border-radius: 15px;
     object-fit: cover;
-    gap: 0 10px;
+    margin: 0 10px;
+    display: inline-block;
     
 }
 
@@ -280,64 +276,27 @@ footer a {
 
 /* Screen size responsive settings */
 
-/* @media all and (max-width: 320px) {
-    .hero-section, .hero-text,  .hero-image, .Information, .Quote, .Call-to-action, footer     {
-        
-        padding: 0px 4px;
-        text-align: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
+@media all and (min-width: 425px) {
     .header {
-        padding: 15px 0px;
-    }
-
-    .hero-text h1 {
-        font-size: 40px;
-        padding-top: 10px;
-
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .hero-text p {
-        padding: 10px;
-    }
-
-    .hero-image img {
-        padding-top: 20px;
-        max-width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .hero-image a {
-        padding: 12px;
+        padding-bottom: 35px;
     }
 
-    .Header h1 {
-        display: flex;
-        text-align: center;
-        padding: 7px;
-        font-size: 32px;
+    .CTA-container p {
+        padding: 0 10px;
     }
 
-    .Contents p {
-        padding-bottom: 10px;
-    }
-
-    .Verse p {
-        font-size: 28px;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .Book p {
-        padding-bottom: 20px;
-    }
-
-} */
-
-/*@media all and (min-width:600px) {
-    .wrapper    {   /*.header, .hero-section, .hero-image,.Information, .Quote, .Call-to-action, footer */
-        /*flex: 1;
-        
+    footer {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
