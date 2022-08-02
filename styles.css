@@ -366,6 +366,7 @@ footer a {
         display: flex;
         justify-content: space-between;
         margin: 0;
+        padding: 50px 10px;
     }
 
     .hero-text {
@@ -416,20 +417,20 @@ footer a {
     }
     
     .Quote {
-        padding: 30px;
+        padding: 100px;
     }
 
     .Verse {
-        padding: 0 150px;
+        padding: 0 80px;
     }
 
     .Book {
-        margin-right: 160px;
+        margin-right: 100px;
         margin-top: 10px;
     }
 
     .CTA {
-        padding: 70px 70px;
+        padding: 140px 140px;
     }
 
     .CTA-container {
@@ -444,13 +445,12 @@ footer a {
         align-items: left;
         justify-content: flex-start;
         flex-wrap: wrap;
-        max-width: 47%;
-        
-        
+        max-width: 50%;
     }
     
     .CTA-text h1{
         padding-left: 0px;
+        padding-right: 0;
         text-align: left;
     }
 
@@ -470,7 +470,11 @@ footer a {
         align-items: center;
         
         margin-top: 20px;
-        margin-right: 70px;
+        margin-right: 30px;
+    }
+
+    footer {
+        padding: 25px;
     }
 
 }
