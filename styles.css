@@ -215,7 +215,7 @@ button:hover {
     font-weight: bold;
     color:#1F2937;
     align-self: flex-end;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 /* CTA Section */
@@ -232,6 +232,7 @@ button:hover {
     background-color: #3882F6;
     border-radius: 8px;
     gap:10px;
+    flex-wrap: wrap;
 
 }
 
@@ -316,28 +317,44 @@ footer a {
 
     .hero-section {
         max-width: 100%;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        
     }
 
     .hero-text {
-        max-width: 45%;
+        max-width: 46%;
+        margin-right: 0px;
+        
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding: 0px;
+        
+       
     }
 
     .hero-text h1 {
-        margin: -60px 0 0 10px;
+        margin: -25px 0px 0 0px;
+        padding: 0px 0px;
     }
 
     .hero-text p {
-        padding: 5px 10px 10px 30px;
+        padding: 5px 10px 10px 10px;
     }
 
     .hero-text button {
-        margin-right: -20px;
+        margin-right: 0px;
     }
 
     .hero-image {
-        display: inline-flex;
+        display: flex;
         flex-wrap: wrap;
-        gap: 0 10px;
         max-width: 50%;
         justify-content: flex-end;
     }
@@ -346,13 +363,61 @@ footer a {
         margin: 0 30px;
     }
     
+    .Quote {
+        padding: 60px 60px;
+    }
+
     .Verse {
-        padding: 0 70px;
+        
     }
 
     .Book {
-        margin-right: 70px;
+        margin-right: 50px;
         margin-top: 10px;
+    }
+
+    .CTA {
+        padding: 100px 100px;
+    }
+
+    .CTA-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .CTA-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    
+    .CTA-text h1{
+        padding: 20px;
+        
+    }
+
+    .CTA-text p {
+        font-size: 24px;
+        margin: 0 60px;
+        text-align: center;
+    }
+    
+    .CTA-button {
+        display: flex;
+        justify-content: center;
+    
+        align-items: center;
+        
+        margin-top: 10px;
+        
+    }
+
+    footer {
+        padding: 25px;
     }
 }
 
