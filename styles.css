@@ -593,7 +593,7 @@ footer a {
         padding: 0 50px;
     }
 
-    /*  Quote Section 1024px  */
+    /*  Quote Section 1280px  */
 
     .Quote {
         padding: 100px;
@@ -653,5 +653,171 @@ footer a {
         align-items: center;
         margin-top: 40px;
         margin-right: -80px;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    
+    .header {
+        padding: 30px 150px;
+    }
+
+    .hero-text {
+        padding: 30px 0px 30px 50px;
+        max-width: 45%;
+        margin-top: -30px;
+        
+    }
+
+    .hero-image {
+        padding: 30px 50px 30px 0;
+    }
+
+    .Contents img {
+        margin: 0 20px;
+    }
+
+    .Contents {
+        padding: 0 50px;
+    }
+
+    /*  Quote Section 1280px  */
+
+    .Quote {
+        padding: 100px;
+    }
+
+    .Verse {
+        padding: 0 150px;
+    }
+
+    .Book {
+        margin-right: 170px;
+        margin-top: 20px;
+    }
+    
+    /* CTA Section 1280px */
+
+    .CTA {
+        padding: 100px 150px;
+    }
+
+    .CTA-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px 40px 10px;
+    }
+
+    .CTA-text {
+        display: flex;
+        align-items: left;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 45%;
+        margin-left: -20px;
+        margin-right: 150px;
+    }
+    
+    .CTA-text h1{
+        padding-left: 0;
+        margin-bottom: -10px;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .CTA-text p {
+        font-size: 24px;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 50px;
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .CTA-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-right: -80px;
+    }
+}
+
+@media all and (min-width: 1366px) {
+    
+    .header {
+        padding: 30px 200px;
+    }
+
+    .hero-text {
+        padding: 30px 0px 30px 100px;
+        max-width: 40%;
+    }
+
+    .hero-image {
+        padding: 30px 100px 30px 0;
+    }
+
+    /*  Quote Section 1366px  */
+
+    .Quote {
+        padding: 100px;
+    }
+
+    .Verse {
+        padding: 0 170px;
+    }
+
+    .Book {
+        margin-right: 200px;
+        margin-top: 30px;
+    }
+    
+    /* CTA Section 1366px */
+
+    .CTA {
+        padding: 100px 150px;
+    }
+
+    .CTA-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px 40px 10px;
+    }
+
+    .CTA-text {
+        display: flex;
+        align-items: left;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 70%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .CTA-text h1{
+        padding-left: 0;
+        margin-bottom: -10px;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .CTA-text p {
+        font-size: 24px;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 10px;
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .CTA-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-right: -50px;
     }
 }
