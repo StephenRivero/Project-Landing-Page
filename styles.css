@@ -13,7 +13,7 @@
 }
 
 .wrapper > * {
-    flex: 1 100%;
+    flex: 3 100%;
 }
 
 /* Header Section */
@@ -26,7 +26,7 @@
     padding: 10px 0px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1920px;
+    max-width: 100%;
 }
 
 .left-header a{
@@ -66,6 +66,7 @@ a {
     padding: 0px 4px;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
 }
 
 .hero-text h1 {
@@ -311,6 +312,8 @@ footer a {
 
     .hero-image a {
         padding-bottom: 35px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .CTA-container p {
@@ -348,11 +351,11 @@ footer a {
     }
 
     .hero-text p {
-        padding: 5px 10px 10px 10px;
+        padding: 5px 10px 10px 5px;
     }
 
     .hero-text button {
-        margin-right: 0px;
+        margin-right: 10px;
     }
 
     .hero-image {
@@ -362,6 +365,12 @@ footer a {
         justify-content: flex-end;
         margin: 0 -10px 0 0;
     }
+
+    .hero-image a {
+        padding: 10px 0px;
+    }
+
+/* Information section 768px */
 
     .Information {
         padding-bottom: 50px;
@@ -463,7 +472,7 @@ footer a {
     }
 
     .hero-text p {
-        margin: 5px 50px 10px 0px;
+        margin: 5px 60px 10px 0px;
     }
 
     .hero-text button {
@@ -747,16 +756,76 @@ footer a {
 @media all and (min-width: 1366px) {
     
     .header {
-        padding: 30px 200px;
+        padding: 30px 200px; 
     }
 
+    .left-header a {
+        font-size: clamp(1rem, 1rem + 1vw, 10rem);
+        
+    }
+
+    .right-header a {
+        font-size: clamp(1rem, 1rem + 1vw, 10rem);
+    }
+
+    /* Hero section 1366px */
+
+    .hero-section {
+        padding-top: clamp(4rem, 2rem + 6vw, 10rem);
+        padding-bottom: clamp(4rem, 2rem + 6vw, 10rem);
+        padding-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        
+    }   
+
     .hero-text {
-        padding: 30px 0px 30px 100px;
-        max-width: 40%;
+        padding: 50px 0px 30px 0px;
+        max-width: 50%;
+        border: 1px solid red;
+        margin-left: 190px;
+        margin-top: -20px;
+        
+        
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2rem, 1.6rem + 2vw, 20rem);
+        border: 1px solid red;
+        
+        margin-right: 0px;
+    }   
+
+    .hero-text p {
+        padding-left: 15px;
+        font-size: clamp(1rem, .6rem + 1vw, 10rem);
+        padding-right: 0px;
+        margin-bottom: 10px;
+        
+    }   
+
+    .hero-text button {
+        font-size: clamp(1rem, .5rem + 1vw, 8rem);
+        padding: 15px 30px;
     }
 
     .hero-image {
-        padding: 30px 100px 30px 0;
+        margin-right: 60px;
+        max-width: 50%;
+    }
+
+    .hero-image img {
+        max-height: 1000px;
+        
+        
+        
+    }
+
+    .hero-image a {
+        font-size: clamp(1rem, .5rem + 1vw, 8rem);
+        padding: 10px 0 0 0;
+        margin: 0 0 0 0;
+
     }
 
     /*  Quote Section 1366px  */
@@ -821,3 +890,4 @@ footer a {
         margin-right: -50px;
     }
 }
+
