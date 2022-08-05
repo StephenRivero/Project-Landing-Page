@@ -10,6 +10,7 @@
     flex-flow: row wrap;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 .wrapper > * {
@@ -63,7 +64,7 @@ a {
     align-items: center;
     background-color: #1F2937;
     margin: 0;
-    padding: 0px 4px;
+    padding: 11px 4px;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -97,8 +98,8 @@ button {
     text-decoration: none;
     font-weight: bolder;
     font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 29px;
+    margin-top: 16px;
 }
 
 button:hover {
@@ -121,12 +122,11 @@ button:hover {
     flex-wrap: wrap;
     padding: 0 2px;
     justify-content: center;
+   
 }
 
 .hero-image img {
-    max-width: 500px;
-    max-height: 250px;
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .hero-image a {
@@ -326,51 +326,82 @@ footer a {
     }
 }
 
-@media all and (min-width: 768px) {
+@media (min-width: 640px) {
     .header {
-        padding: 20px 30px;
+        padding: 15px 100px;
+        border: 1px solid red;
+        max-width: 100%;
+        
+    }
+
+    .hero-wrapper {
+        background-color: #1F2937;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .hero-section {
-        max-width: 100%;
-        padding: 50px;
+        max-width: 80%;  
+        max-height: calc(80%*16/9);
         display: flex;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        /* border: 1px solid red; */
+        margin: 2vw 0vw 5vw 0;
+        object-fit: fill;
     }
 
     .hero-text {
-        max-width: 46%;
-        align-items: center;
-        justify-content: center;
+        max-width: 50%;
+        max-height: calc(50%*16/9);
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: center;
+        /* border: 1px solid red; */
+        
     }
 
     .hero-text h1 {
-        margin: -25px 0px 0 -10px;
+        font-size: clamp(1.5rem, 1.5rem + 2vw, 10rem);
+        padding: 0 0;
+        margin: 0px 0px .5vw 0px;
     }
 
     .hero-text p {
-        padding: 5px 10px 10px 5px;
+        padding: 0px 0px 0px 0px;
+        font-size: clamp(.5rem, .4rem + 1vw, 10rem);
+        margin: 1vw 0;
+        margin-right: 1.5vw;
     }
 
     .hero-text button {
-        margin-right: 10px;
+        margin: 1vw 0 0 0;
+        padding: 1vw 3vw;
+        font-size: clamp(.5rem, .5rem + 1vw, 10rem);
     }
 
     .hero-image {
         display: flex;
-        flex-wrap: wrap;
         max-width: 50%;
+        max-height: calc(50%*16/9);
         justify-content: flex-end;
-        margin: 0 -10px 0 0;
+        margin: 0 0 0 0;
+        flex-wrap: nowrap;
+        /* border: 1px solid red; */
+    }
+
+    .hero-image img {
+        max-width: 100%;
+       
     }
 
     .hero-image a {
         padding: 10px 0px;
     }
 
-/* Information section 768px */
+/* Information section 640px */
 
     .Information {
         padding-bottom: 50px;
@@ -442,452 +473,5 @@ footer a {
     }
 }
 
-@media all and (min-width: 1024px) {
-    .header {
-        padding: 30px 100px;
-    }
 
-    .hero-section {
-        max-width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        padding: 50px 10px;
-        flex-wrap: nowrap;
-    }
-
-    .hero-text {
-        margin-left: 90px;
-        text-align: left;
-        justify-content: flex-start;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: left;
-    }
-
-    .hero-text h1 {
-        margin: -50px 150px 0 0px;
-        flex-wrap: wrap;
-        display: flex;
-    }
-
-    .hero-text p {
-        margin: 5px 60px 10px 0px;
-    }
-
-    .hero-text button {
-        margin: 0 0 0 10px;
-    }
-
-    .hero-image {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: 100px;
-        justify-content: flex-end;
-
-    }
-
-    .hero-image img {
-        
-    }
-
-    /* Information Section  1024px */    
-
-    .Header {
-        padding: 40px;
-    }
-
-    .Contents {
-        padding: 0 50px;
-    }
-
-    .Contents img {
-        margin: 0 60px;
-
-    }
-
-    .Contents p {
-        margin-bottom: 60px;
-    }
-    
-/*  Quote Section 1024px  */
-
-    .Quote {
-        padding: 100px;
-    }
-
-    .Verse {
-        padding: 0 80px;
-    }
-
-    .Book {
-        margin-right: 100px;
-        margin-top: 10px;
-    }
-
-/* CTA Section 1024px */
-
-    .CTA {
-        padding: 140px 140px;
-    }
-
-    .CTA-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px 10px 40px 10px;
-    }
-
-    .CTA-text {
-        display: flex;
-        align-items: left;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        max-width: 60%;
-        margin-left: 20px;
-    }
-    
-    .CTA-text h1{
-        padding-left: 0;
-        margin-bottom: -10px;
-        margin-right: 0;
-        text-align: left;
-    }
-
-    .CTA-text p {
-        font-size: 24px;
-        padding-left: 0;
-        margin-left: 0;
-        margin-right: 50px;
-        padding-right: 0;
-        text-align: left;
-    }
-    
-    .CTA-button {
-        display: flex;
-        justify-content: center;
-    
-        align-items: center;
-        
-        margin-top: 30px;
-        padding-right: 60px;
-    }
-
-    footer {
-        padding: 25px;
-    }
-
-}@media all and (min-width: 1280px) {
-    
-    .header {
-        padding: 30px 150px;
-    }
-
-    .hero-text {
-        padding: 30px 0px 30px 50px;
-        max-width: 45%;
-        margin-top: -30px;
-        
-    }
-
-    .hero-image {
-        padding: 30px 50px 30px 0;
-    }
-
-    .Contents img {
-        margin: 0 20px;
-    }
-
-    .Contents {
-        padding: 0 50px;
-    }
-
-    /*  Quote Section 1280px  */
-
-    .Quote {
-        padding: 100px;
-    }
-
-    .Verse {
-        padding: 0 150px;
-    }
-
-    .Book {
-        margin-right: 170px;
-        margin-top: 20px;
-    }
-    
-    /* CTA Section 1024px */
-
-    .CTA {
-        padding: 100px 150px;
-    }
-
-    .CTA-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 10px 40px 10px;
-    }
-
-    .CTA-text {
-        display: flex;
-        align-items: left;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        max-width: 45%;
-        margin-left: -20px;
-        margin-right: 150px;
-    }
-    
-    .CTA-text h1{
-        padding-left: 0;
-        margin-bottom: -10px;
-        margin-right: 0;
-        text-align: left;
-    }
-
-    .CTA-text p {
-        font-size: 24px;
-        padding-left: 0;
-        margin-left: 0;
-        margin-right: 50px;
-        padding-right: 0;
-        text-align: left;
-    }
-    
-    .CTA-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        margin-right: -80px;
-    }
-}
-
-@media all and (min-width: 1280px) {
-    
-    .header {
-        padding: 30px 150px;
-    }
-
-    .hero-text {
-        padding: 30px 0px 30px 50px;
-        max-width: 45%;
-        margin-top: -30px;
-        
-    }
-
-    .hero-image {
-        padding: 30px 50px 30px 0;
-    }
-
-    .Contents img {
-        margin: 0 20px;
-    }
-
-    .Contents {
-        padding: 0 50px;
-    }
-
-    /*  Quote Section 1280px  */
-
-    .Quote {
-        padding: 100px;
-    }
-
-    .Verse {
-        padding: 0 150px;
-    }
-
-    .Book {
-        margin-right: 170px;
-        margin-top: 20px;
-    }
-    
-    /* CTA Section 1280px */
-
-    .CTA {
-        padding: 100px 150px;
-    }
-
-    .CTA-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 10px 40px 10px;
-    }
-
-    .CTA-text {
-        display: flex;
-        align-items: left;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        max-width: 45%;
-        margin-left: -20px;
-        margin-right: 150px;
-    }
-    
-    .CTA-text h1{
-        padding-left: 0;
-        margin-bottom: -10px;
-        margin-right: 0;
-        text-align: left;
-    }
-
-    .CTA-text p {
-        font-size: 24px;
-        padding-left: 0;
-        margin-left: 0;
-        margin-right: 50px;
-        padding-right: 0;
-        text-align: left;
-    }
-    
-    .CTA-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        margin-right: -80px;
-    }
-}
-
-@media all and (min-width: 1366px) {
-    
-    .header {
-        padding: 30px 200px; 
-    }
-
-    .left-header a {
-        font-size: clamp(1rem, 1rem + 1vw, 10rem);
-        
-    }
-
-    .right-header a {
-        font-size: clamp(1rem, 1rem + 1vw, 10rem);
-    }
-
-    /* Hero section 1366px */
-
-    .hero-section {
-        padding-top: clamp(4rem, 2rem + 6vw, 10rem);
-        padding-bottom: clamp(4rem, 2rem + 6vw, 10rem);
-        padding-right: 100px;
-        display: flex;
-        justify-content: space-between;
-        
-    }   
-
-    .hero-text {
-        padding: 50px 0px 30px 0px;
-        max-width: 50%;
-        border: 1px solid red;
-        margin-left: 190px;
-        margin-top: -20px;
-        
-        
-    }
-
-    .hero-text h1 {
-        font-size: clamp(2rem, 1.6rem + 2vw, 20rem);
-        border: 1px solid red;
-        
-        margin-right: 0px;
-    }   
-
-    .hero-text p {
-        padding-left: 15px;
-        font-size: clamp(1rem, .6rem + 1vw, 10rem);
-        padding-right: 0px;
-        margin-bottom: 10px;
-        
-    }   
-
-    .hero-text button {
-        font-size: clamp(1rem, .5rem + 1vw, 8rem);
-        padding: 15px 30px;
-    }
-
-    .hero-image {
-        margin-right: 60px;
-        max-width: 50%;
-    }
-
-    .hero-image img {
-        max-height: 1000px;
-        
-        
-        
-    }
-
-    .hero-image a {
-        font-size: clamp(1rem, .5rem + 1vw, 8rem);
-        padding: 10px 0 0 0;
-        margin: 0 0 0 0;
-
-    }
-
-    /*  Quote Section 1366px  */
-
-    .Quote {
-        padding: 100px;
-    }
-
-    .Verse {
-        padding: 0 170px;
-    }
-
-    .Book {
-        margin-right: 200px;
-        margin-top: 30px;
-    }
-    
-    /* CTA Section 1366px */
-
-    .CTA {
-        padding: 100px 150px;
-    }
-
-    .CTA-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 10px 40px 10px;
-    }
-
-    .CTA-text {
-        display: flex;
-        align-items: left;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        max-width: 70%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    .CTA-text h1{
-        padding-left: 0;
-        margin-bottom: -10px;
-        margin-right: 0;
-        text-align: left;
-    }
-
-    .CTA-text p {
-        font-size: 24px;
-        padding-left: 0;
-        margin-left: 0;
-        margin-right: 10px;
-        padding-right: 0;
-        text-align: left;
-    }
-    
-    .CTA-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        margin-right: -50px;
-    }
-}
 
