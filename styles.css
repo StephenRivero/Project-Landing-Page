@@ -14,7 +14,7 @@
 }
 
 .wrapper > * {
-    flex: 3 100%;
+    flex: 4 4 100%;
 }
 
 /* Header Section */
@@ -327,11 +327,33 @@ footer a {
 }
 
 @media (min-width: 640px) {
-    .header {
-        padding: 15px 100px;
-        border: 1px solid red;
+    
+    .header-wrapper {
+        background-color: #1F2937;
         max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header {
+        padding: 2vw 0vw;
+        width: 70vw;
+        /* border: 1px solid red; */
+    }
+
+    .left-header {
+        display: flex;
         
+    }
+
+    .left-header a {
+        font-size: 2.5vw;
+        padding: 0vw 0vw 0vw 0vw;
+    }
+
+    .right-header a {
+        font-size: 2vw;
+        padding: 0vw 0vw 0vw 3vw;
     }
 
     .hero-wrapper {
@@ -342,38 +364,37 @@ footer a {
     }
 
     .hero-section {
-        max-width: 80%;  
-        max-height: calc(80%*16/9);
+        max-width: 70%;  
+        max-height: calc(70%*16/9);
         display: flex;
         flex-wrap: nowrap;
-        margin: 4vw 0vw 4vw 0;
-        border: 1px solid red;
+        margin: 4vw 0vw 8vw 0;
+        /* border: 1px solid red; */
         
     }
 
     .hero-text {
-        max-width: 50%;
-        max-height: calc(50%*16/9);
+        width: 50%;
+        height: calc(50%*16/9);
         display: flex;
         flex-wrap: wrap;
         text-align: left;
         align-items: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         
     }
 
     .hero-text h1 {
-        /* font-size: 4.2vw; */
-        font-size: 4.5vw;
+        font-size: 4.2vw;
+        /* font-size: 4.5vw; */
         padding: 0 0;
         margin: 0vw 0px 0vw 0px;
     }
 
     .hero-text p {
-        /* font-size: 2.1vw; */
-        font-size: 2.1vw;
-        /* padding: 1vw 4vw 0.5vw 0; */
-        padding: 1.5vw 4vw 1.5vw 0;
+        font-size: 1.8vw;
+        padding: 1vw 4vw 0.5vw 0;
+        /* padding: 1.5vw 4vw 1.5vw 0; */
     }
 
     .hero-text button {
@@ -388,11 +409,13 @@ footer a {
         max-height: calc(50%*16/9);
         margin: 0 0 0 0;
         flex-wrap: nowrap;
-        border: 2px solid red;
+        /* border: 2px solid red; */
+        
     }
 
     .hero-image img {
         max-width: 100%;
+        object-fit: fill;
     }
 
     .Information {
