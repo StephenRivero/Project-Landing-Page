@@ -27,11 +27,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 
 // Navbar Scroll settings
-var   lastScrollTop = 0;
+let   lastScrollTop = 0;
         navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", function(){
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop){
         navbar.style.top="-80px";
     } else {

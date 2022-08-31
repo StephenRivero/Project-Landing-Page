@@ -35,20 +35,10 @@ body {
     align-items: center;
     align-content: center;
     background-image:url(Images/Kawasan\ falls\ 3.png);
-    background-position: center;
+    /* background-position: center; */
     background-size:cover;
-    background-attachment:local;
     border-bottom: solid black 1px;
 
-    /* transition: .10s ease-in-out;
-    transition-property: background-position;
-    -webkit-transition: .10s ease-in-out;
-    -moz-transition: .10s ease-in-out;
-    -o-transition: .10s ease-in-out;
-
-    -webkit-transition-property: background-position;
-    -moz-transition-property: background-position;
-    -o-transition-property: background-position; */
 }
 
 @media (max-width: 599px) {
@@ -557,7 +547,7 @@ footer a {
 
     /* Header Section starting 600px */
     .header {
-        height: calc(45vw);
+        height: calc(46vw);
     }
 
     .navbar {
@@ -827,4 +817,42 @@ footer a {
         font-size: 1.5vw;
         padding: 1vw 0;
     }
+}
+
+/* Responsive Settings of Desktop Devices */
+
+@media (min-width: 1200px) {
+    
+    .navbar {
+        height: 3.1vw;
+        /* border: 1px solid black; */
+    }
+
+    .navbar-content-wrapper {
+        width: 90vw;
+        height: 4vw;
+        align-self: center;
+        align-content: center;
+        /* border: 1px solid red; */
+    }
+
+    .branding {
+        font-size: 1vw;
+         /* border: 1px solid red; */
+    }
+
+    .nav-menu {
+        width: 20%;
+        height: 4vw;
+        right: 0;
+        margin-right: 4.6vw;
+    }
+
+    .nav-item a {
+        font-size: 1.25vw;
+        /* padding: 0vw 0vw 0vw 2vw; */
+        /* margin: auto; */
+    }
+
+
 }
