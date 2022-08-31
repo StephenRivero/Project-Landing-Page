@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="custom.css">
+    <title>Personal Portfolio - Stephen Manasseh R. Pastor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="header-hero-wrapper">
-            <div class="header">
-                <div class="left-header">
-                    <a href="https://stephenrivero.github.io/Project-Landing-Page/">
-                    <img src="Images/Cartoonize-image-black-and-white.png" alt="Cartoonize image of me as a website logo.">
-                    </a>
-                </div>
-                <div class="right-header">
-                    <div class="About">
-                        <a href="https://drive.google.com/file/d/1UKsetQR_eytSeqYvwHVTaRLTyPyQ9XHe/view?usp=sharing">About</a>
+        <div id="parallax" class="header">
+            <nav id="navbar" class="navbar">
+                <div class="navbar-content-wrapper">
+                    <a class="branding" href="https://stephenrivero.github.io/Project-Landing-Page/">
+                    <h1>Stephen Rivero</h1>
+                    </a>    
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="https://stephenrivero.github.io/Project-Landing-Page/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://drive.google.com/file/d/1UKsetQR_eytSeqYvwHVTaRLTyPyQ9XHe/view?usp=sharing" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Contact Form" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
-                    <!-- <div class="Store">
-                        <a href="">Store</a>
-                    </div> -->
-                    <div class="Contact">
-                        <a href="https://www.linkedin.com/in/stephen-pastor">Contact</a>
-                    </div>
                 </div>
-            </div>
+            </nav>
             <div class="hero-section">
                 <div class="hero-text">
-                    <h1>Welcome!</h1>
-                    <p>I'm Stephen Manasseh R. Pastor,<br>an aspiring Front End Web Developer<br>from Cavite, Philippines.</p>
-                    <button><a href="https://www.linkedin.com/in/stephen-pastor">Contact</a></button>
+                    <!-- <img src="Images/Front-End-Web-Dev.gif"> -->
+                    <h1 data-text="#FrontEndWebDeveloper">#FrontEndWebDeveloper</h1>
+                    <!-- <p>Front End Web Developer</p>
+                    <button><a href="#Contact Form">Contact</a></button> -->
                 </div>
-                <div class="hero-image">
+                <!-- <div class="hero-image">
                     <img src="Images/Stephen Manasseh Pastor.JPG"  alt="An image of myself">
-                    <!-- <a href="https://www.pexels.com/photo/monochrome-photo-of-two-people-having-a-video-call-5380673/">Photo by Tima Miroshnichenko</a> -->
-                </div>
+                    <a href="https://www.pexels.com/photo/monochrome-photo-of-two-people-having-a-video-call-5380673/">Photo by Tima Miroshnichenko</a>
+                </div> -->
             </div>
         </div>
         <div class="Information">
@@ -65,32 +71,39 @@
         </div>
         <div class="Quote-section">
             <div class="Verse">
-                <p>"Wisdom is supreme; therefore get wisdom. Though it cost all you have, get understanding."</p>
+                <p>"Wisdom is supreme; therefore get wisdom.<br>Though it cost all you have, get understanding."</p>
             </div>
             <div class="Book">
                 <p>- Proverbs 4:7a</p>
             </div>
         </div>
-        <div class="form-container">
-
-
-
+        <div class="form-wrapper">
+            <div class="form-container">
+             <h1><a id="Contact Form">Contact Form</a></h1>
+                <form action="https://formspree.io/f/xoqbvqjv" method="POST">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
-        <div class="CTA">    
+        <!-- <div class="CTA">    
             <div class="CTA-container">
                 <div class="CTA-text">
                     <h1>Call to action! It's time!</h1>
-                    <p>Sign up for our product by clicking that button right over there!</p>
+                    <p>Leave a message by clicking that button right over there!</p>
                 </div>    
                 <div class="CTA-button">   
-                    <button>Sign up</button>
+                    <button><a href="#Contact Form">Contact</a></button>
                 </div>
             </div>
-        </div>
+        </div> -->
         <footer>
             <p>Copyright ©<a href="https://github.com/StephenRivero">Stephen Rivero</a>
             together with <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a> 2022</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
