@@ -21,6 +21,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 /* Header Section */
@@ -35,7 +36,7 @@ body {
     align-items: center;
     align-content: center;
     background-image:url(Images/Kawasan\ falls\ 3.png);
-    /* background-position: center; */
+    background-position: center;
     background-size:cover;
     border-bottom: solid black 1px;
 
